@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ngg": {
+      "type": "stdio",
+      "command": "bun",
+      "args": ["src/ngg/server.ts"]
+    },
+    "numbaseball": {
+      "type": "stdio",
+      "command": "bun",
+      "args": ["src/server.ts"]
+    }
+  }
+}
