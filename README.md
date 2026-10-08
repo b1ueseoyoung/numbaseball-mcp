@@ -4,6 +4,8 @@ A Korean "number baseball" (Bulls and Cows) game served as an MCP server, built 
 
 숫자야구(상대가 정한 서로 다른 숫자 3~4자리를 스트라이크·볼 힌트로 맞히는 게임)를 MCP 서버로 만든 실습입니다. Claude Code 같은 MCP 호스트가 이 서버에 붙으면, 모델이 tool을 불러 게임을 시작하고 추측하며 끝까지 둡니다. 서버는 상태(대기 중 / 게임 중)에 따라 보여 주는 tool과 resource를 바꾸고, 설정이 빠져 있으면 사용자에게 입력 창(elicitation)을 띄워 묻습니다.
 
+**데모 영상:** [numbaseball-demo.mp4 (2분 3초)](https://github.com/b1ueseoyoung/numbaseball-mcp/releases/download/v0.1.0/numbaseball-demo.mp4) — Claude Code(Sonnet)가 `/mcp__numbaseball__new_game`을 인자 없이 실행하자 서버가 입력 창으로 자릿수·난이도를 묻고(3자리, easy), Claude가 7번 만에 맞힙니다. [v0.1.0 릴리스](https://github.com/b1ueseoyoung/numbaseball-mcp/releases/tag/v0.1.0)에 첨부돼 있습니다.
+
 ## 차례
 
 - [이 실습에서 배우는 것](#이-실습에서-배우는-것)
